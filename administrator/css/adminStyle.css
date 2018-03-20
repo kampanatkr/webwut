@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+*{
+    font-family: 'Kanit', sans-serif;
+}
+.tab {
+    float: left;
+    background-color: #f39e98;
+    width: 200px;
+    height: 100%;
+}
+.tab button {
+    display: block;
+    background-color: inherit;
+    /*color: black;*/
+    padding: 22px 16px;
+    width: 100%;
+    /*border: none;*/
+    /*outline: none;*/
+    text-align: left;
+    cursor: pointer;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+button:hover {
+    background-color: #df8a83;
+}
+
+/* Create an active/current "tab button" class */
+button:active{
+    background: #61b3cf;
+}
+
+.col .row{
+    height: 40px;
+}
+input{
+    height: 30px;
+}
+/*table*/
+
+tr th{
+    background-color: #f7e881;
+    text-align: center;
+    border-bottom: 5px solid #f39e98;
+}
+tr:nth-child(odd) td{
+    background-color: #ebe7da;
+}tr:nth-child(even) td{
+    background-color: #d9ceae;
+}
+
+th, td{
+     border: 2px solid #f7e881;
+}
+
+/*sort table*/
+th:hover{
+    background-color: #f39e98;
+    cursor: pointer;
+}
+th:active{
+    background-color: #61b3cf;
+}
+
+/*select cell for edit*/
+tbody tr :hover{
+    background-color: #61b3cf;
+    cursor: pointer;
+}
+
+/*add user btn*/
+button[id*="add"] {
+    font-size: 15px;
+    color: black;
+    width: 100px;
+    font-weight: bold;
+    border: 2px solid #f675b3;
+    background-color: #f675b3;
+    
+    padding: 5px;
+    text-align: center;
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button[id*="add"]:hover,button[id*="confirm-"]:hover,button[id*="cancel-"]:hover{
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-color: black;
+}
+
+/*add form*/
+button[id*="confirm-"]{
+    width: 80px;
+    border: 2px solid #f675b3;
+    background-color: #f675b3;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button[id*="cancel-"]{
+    border: 2px solid #d9ceae;
+    background-color: #d9ceae;
+    width: 80px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+form[id*="adding-form"]{
+    background-color: #61b3cf;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+}
+div[id*="form-add-"]{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10%;
+}
+/*edit form*/
+div[id*="form-edit-"]{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10%;
+}
+
+
+form[id*="editing-form"]{
+    background-color: #61b3cf;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+/*alert for delet list*/
+div[id*='alert-delete']{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10%;
+}
+
+#alert-delete-form{
+    background-color: #61b3cf;
+    width: 20%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+
+/*Btn export PDF*/
+
+button[id*="export"] {
+    font-size: 15px;
+    color: black;
+    width: 100px;
+    font-weight: bold;
+    border: 2px solid #61b3cf;
+    background-color: #61b3cf;
+    
+    padding: 5px;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button[id*="export"]:hover{
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-color: black;
+}

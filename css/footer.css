@@ -1,0 +1,18 @@
+#footer{
+  height: 180px;
+  background-color: #c6e4ef;
+}
+
+#down{
+  height: 50px;
+  background-color: #5fb4d1;
+}
+
+#textWebwut{
+  color: white !important;
+}
+
+#i{
+  text-align: center;
+  padding: 5%;
+}

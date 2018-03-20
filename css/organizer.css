@@ -1,0 +1,81 @@
+.btn-primary.edit-event,
+.btn-primary.delete-event,
+.btn-primary.button-modal {
+    background-color: #f675b3;
+    border-color: #f675b3;
+}
+
+.btn-primary#add-event-btn {
+    background-color: #61b3cf;
+    border-color: #61b3cf;
+}
+
+.btn-primary#upload-image-btn {
+    background-color: #f7e881;
+    border-color: #f7e881;
+}
+
+.btn-secondary.button-modal {
+    background-color: #df8a83;
+    border-color: #df8a83;
+}
+
+.btn-primary.edit-event:hover,
+.btn-primary.delete-event:hover,
+.btn-primary.button-modal:hover,
+.btn-secondary.button-modal:hover,
+.btn-primary#add-event-btn:hover,
+.btn-primary#upload-image-btn:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+h1.headings {
+    background-color: #f7e881;
+}
+
+div#event-options {
+    background-color: #f39e98;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.event-holder,
+.event-location-wrapper {
+    background-color: rgba(235, 231, 218, 0.7);
+}
+
+.image-fit-cover {
+    object-fit: cover;
+}
+
+.image-fit-contain {
+    object-fit: contain;
+}
+
+.image-640-360 {
+    width: 640px;
+    height: 360px;
+}
+
+span.required {
+    color: red;
+}
+
+div > p.card-text > span {
+    font-weight: bold;
+}
+
+div > p.card-text > a {
+    color: #f675b3;
+    text-decoration: none;
+}
+
+div > p.card-text > a:hover {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr:200,300,500');
+
+.container-fluid{
+  font-family: 'Mitr', sans-serif;
+}
+.carousel-inner img {
+  width: 100%;
+  /* height: 100%; */
+  padding: 0 4%;
+  background-color: #f675b3;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#menuBar {
+  padding: 1% 4% 1.5% 4%;
+  background-color: #d9ceae;
+}
+.btn-default-dropdown{
+  background-color: #f675b3;
+}
+.btn-default-dropdown:hover{
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-color: black;
+}
+.btn-filter-dropdown{
+  background-color: #f675b3;
+}
+.btn-filter-dropdown:hover{
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-color: black;
+}
+.btn-join{
+  background-color: white;
+  color: black;
+  border: 2px solid black !important;
+  border-radius: 20px !important;
+}
+.btn-join:hover{
+  color: black;
+  background-color: #f675b3;
+  border: 2px solid #f675b3 !important;
+}
+.topic {
+  background-color: white;
+  padding: 0 2%;
+  font-weight: bold;
+}
+#topicYellowSci , #topicYellowHob , #topicYellowCommu {
+  background-color: #f7e881;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 1.2em;
+  padding: 2% 3% 2% 4%;
+}
+#topicPinkBus , #topicPinkMu , #topicPinkSports {
+  background-color: #f39e98;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 1.2em;
+  padding: 2% 3% 2% 3%;
+}
+#topicBlueEdu , #topicBlueHealth {
+  background-color: #61b3cf;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 1.2em;
+  padding: 2% 3% 2% 3%;
+}
+.col-3 {
+  text-align: center;
+}
+.col-sm-7  {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 200;
+  background-color: #d9ceae;
+  padding: 0%;
+  border-radius:15px;
+}
+.noPadding {
+  padding: 0 !important;
+}
+.scienceEvent , .businessEvent , .educationEvent , .hobbiesEvent , .musicEvent , .healthEvent , .communityEvent , .sportsEvent{
+  padding: 2% 3% 2% 3%;
+}
+.row .table-row{
+  background-color: #ebe7da;
+  padding: 4% 0;
+  margin: 5% 0;
+  border-radius:15px;
+}
+.row .table-row:hover{
+  background-color: white;
+  opacity: 0.9;
+  padding: 4% 0 ;
+  margin: 5% 0;
+  border-radius:15px;
+}
+#titleImage{
+  margin: 0 0 7% 0;
+}
+.btn-link{
+  color: black !important;
+  float: right;
+}
+.btn-info{
+  color: black !important;
+}
+.btn-info:hover{
+  color: black !important;
+  background-color: white !important;
+  border-color: black!important;
+}

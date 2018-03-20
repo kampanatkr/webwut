@@ -1,0 +1,105 @@
+body {
+    background-color: antiquewhite;
+}
+.banner {
+    height: 150px;
+    background-color: aliceblue;
+}
+.content {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.padding-top {
+    padding-top: 50px;
+}
+.text-centered {
+    text-align: center;
+}
+figure {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 20px; /* adjust as needed */
+    text-align: center;
+}
+figure img#shownImage {
+    vertical-align: top;
+    border: 1px solid black;
+}
+figure figcaption {
+    text-align: center;
+}
+
+.table-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table-header > * {
+    background-color: #f7e881;
+    border: 1px solid black;
+    border-right: 0px;
+}
+
+.table-header > *:last-child {
+    border-right: 1px solid black;
+}
+
+
+.table-row > * {
+    background-color: #ebe7da;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.table-row:hover:not(no-event) > * {
+    background-color: #aba7aa;
+}
+
+
+.table-row > *:last-child {
+    border-right: 1px solid black;
+}
+
+.row-with-centered-col > *{
+    float: none;
+}
+
+.row-with-centered-col > *:first-child{
+    margin-left: auto;
+}
+
+.row-with-centered-col > *:last-child{
+    margin-right: auto;
+}
+
+no-event {
+    display: block;
+}
+
+#clickme {
+    position: absolute;
+    display: none;
+    background-color: rgba(245, 245, 245, 0.459);
+    top:0px;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+#shownImage:hover+#clickme {
+    display: block;
+    
+}
+
+#clickme:hover {
+    display: block;
+    
+}
+
+img#modalImage {
+    display: block;
+    margin: 0 auto;
+}
+

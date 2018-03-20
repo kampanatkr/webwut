@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+*{
+    font-family: 'Kanit', sans-serif;
+}
+
+#msg-form {
+	margin: 10px;
+	padding: 1em;
+	background-color: #f7e881;
+	text-align: center;
+}
+
+#displayMessage{
+	padding: 10px;
+
+}
+.btnFile{
+    font-size: 15px;
+    color: black;
+    width: 150px;
+    font-weight: bold;
+    border: 2px solid #d9ceae;
+    background-color: #d9ceae;
+    
+    padding: 5px;
+    text-align: center;
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btnFile:hover{
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-color: black;
+}
+.btnSend {
+    font-size: 15px;
+    color: black;
+    width: 100px;
+    font-weight: bold;
+    border: 2px solid #f675b3;
+    background-color: #f675b3;
+    
+    padding: 5px;
+    text-align: center;
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btnSend:hover{
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-color: black;
+}
+
+.btnDeleteFile{
+    font-size: 15px;
+    color: black;
+    width: 110px;
+    font-weight: bold;
+    border: 2px solid #ff5432;
+    background-color: #ff5432;
+    
+    padding: 5px;
+    text-align: center;
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btnDeleteFile:hover{
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-color: black;
+}
+#header-box{
+    text-align: center;
+    background-color: #d9ceae;
+    font-weight: bold;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+/*show all message*/
+#inbox{
+    height: 800px;
+    overflow-y: scroll;
+}
+#sentBox{
+    height: 800px;
+    overflow-y: scroll;
+}
+/*----------------*/
+
+@media screen and (orientation: landscape){
+    #msg-box{
+        width: 350px;
+        height: 100px;
+    }
+    input[type = "text"]{
+        width: 200px;
+    }
+}
+
+@media screen and (orientation: portrait){
+    #msg-box{
+        width: 100%;
+        height: 100px;
+    } 
+    input[type = "text"]{
+        width: 100%;
+    }
+}
+
+
+
+/* snackbar: alert sending msg*/
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: black; /* text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
